@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+scikit-learn
+pillow
+seaborn
+opencv-python
+scikit-image
+tqdm
+imgaug
+ftfy
+regex
+imagecorruptions

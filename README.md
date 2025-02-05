@@ -11,7 +11,8 @@
 - Simple Report Link: https://www.hackster.io/iair/canhuitang-submission-v2-37916c
 
 ## Author
-[Canhui Tang](https://scholar.google.com/citations?hl=zh-CN&user=TKqkrnUAAAAJ), Sanping Zhou, Mang Cao, Le Wang, Hao Sun
+[Canhui Tang](https://scholar.google.com/citations?hl=zh-CN&user=TKqkrnUAAAAJ)[1], [Sanping Zhou](https://scholar.google.cz/citations?hl=zh-CN&user=2Drvv44AAAAJ)[1], Mang Cao[1], [Le Wang](https://scholar.google.cz/citations?hl=zh-CN&user=RypRCUQAAAAJ)[1], Hao Sun[2]
+[1]Xi'an Jiaotong University, [2]TeleAI
 
 ## Overview
 Anomaly detection is a crucial task that learns normal patterns from training samples to identify abnormal samples in test data. **However, existing approaches often encounter challenges in real-world scenarios due to data drift resulting from external factors such as changes in camera angles, lighting conditions, and noise.** In this work, we propose a robust anomaly detection model via Generalized Normality Learning (GNL) to deal with the domain shift. The key to our robustness to domain shift is to enhance the recall of out-of-distribution samples. The work is built based on [ADshfit](https://github.com/mala-lab/ADShift) and [DestSeg](https://github.com/apple/ml-destseg). First, we train a normality distillation student to fit diverse augmented normal patterns, in which we adopt a [hard distillation loss](https://github.com/Hui-design/AAND) and a [structure distillation loss](https://arxiv.org/abs/2402.17091). Second, to enhance the accuracy of anomaly localization, we adopt a [segmentation sub-network](https://github.com/mala-lab/ADShift) to integrate the outputs of teacher and student models. Experiments on the MvTec AD test set with random perturbations highlight the effectiveness of our method. If you find this work helpful, please give us your star.
@@ -56,7 +57,7 @@ python train_Seg.py --data_root <your_path>/mvtec/ --aux_path <your_path>/dtd/im
 
 
 ## ⛳ Testing
-You can test the trained models on mvtec, VisA, or mvtec3d by the following commands:
+You can test the trained models by the following commands:
 ```bash
 python inference_mvtec_ATTA.py --data_root <your_path>/mvtec/    
 ```
@@ -64,7 +65,7 @@ python inference_mvtec_ATTA.py --data_root <your_path>/mvtec/
 ## Citation
 ```bibtex
 @misc{VAND-GNL,
-  author = {Canhui Tang},
+  author = {Canhui Tang, Sanping Zhou, Mang Cao, Le Wang, Hao Sun},
   title = {VAND-GNL},
   howpublished = {\url{https://github.com/Hui-design/VAND-GNL}},
   year = {2025},

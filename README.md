@@ -3,6 +3,13 @@
 2nd Place of CVPR 2024 VAND2.0 Challenge: Generalized Normality Learning for Robust Anomaly Detection
 </h2>
 
+
+## 🔥 Honor
+2nd Place of CVPR 2024 VAND2.0 Challenge:
+- Workshop Link: https://sites.google.com/view/vand-2-0-cvpr-2024/home
+- Challenge Link：https://www.hackster.io/contests/openvino2024
+- Simple Report Link: https://www.hackster.io/iair/canhuitang-submission-v2-37916c
+  
 ## Overview
 Anomaly detection is a crucial task that learns normal patterns from training samples to identify abnormal samples in test data. **However, existing approaches often encounter challenges in real-world scenarios due to data drift resulting from external factors such as changes in camera angles, lighting conditions, and noise.** In this work, we propose a robust anomaly detection model via Generalized Normality Learning (GNL) to deal with the domain shift. The key to our robustness to domain shift is to enhance the recall of out-of-distribution samples. The work is built based on [ADshfit](https://github.com/mala-lab/ADShift) and [DestSeg](https://github.com/apple/ml-destseg). First, we train a normality distillation student to fit diverse augmented normal patterns, in which we adopt a [hard distillation loss](https://github.com/Hui-design/AAND) and a [structure distillation loss](https://arxiv.org/abs/2402.17091). Second, to enhance the accuracy of anomaly localization, we adopt a [segmentation sub-network](https://github.com/mala-lab/ADShift) to integrate the outputs of teacher and student models. Experiments on the MvTec AD test set with random perturbations highlight the effectiveness of our method. If you find this work helpful, please give us your star.
 
@@ -13,11 +20,6 @@ Anomaly detection is a crucial task that learns normal patterns from training sa
 
 
 
-## 🔥 Honor
-2nd Place of CVPR 2024 VAND2.0 Challenge:
-- Workshop Link: https://sites.google.com/view/vand-2-0-cvpr-2024/home
-- Challenge Link：https://www.hackster.io/contests/openvino2024
-- Simple Report Link: https://www.hackster.io/iair/canhuitang-submission-v2-37916c
 
 ## 🔧  Installation
 

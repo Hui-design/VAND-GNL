@@ -47,6 +47,11 @@ pip install -r requirements.txt
 - [MVTec AD](https://www.mvtec.com/company/research/datasets/mvtec-ad)
 - [DRAEM_dtd](https://www.robots.ox.ac.uk/~vgg/data/dtd/), used as the auxillary texture datasets for synthesizing anomalies like [DRAEM](https://github.com/VitjanZ/DRAEM). 
 
+## Preprocess
+Generate the corrupted_mvtec for the test set like [ADshift](https://github.com/mala-lab/ADShift) using generate_corrupted_mvtec.py, in which we added the rotation corruptions:
+```bash
+python generate_corrupted_mvtec.py --data_path <your_path>/mvtec/  
+```
 
 
 ## 🚅 Training

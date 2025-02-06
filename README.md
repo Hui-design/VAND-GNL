@@ -20,7 +20,7 @@ Anomaly detection is a crucial task that learns normal patterns from training sa
 
 ![pipeline](asserts/pipeline.jpg)
 <div align="center">
-  <img src=asserts/demo.jpg width="800" height="525">
+  <img src=asserts/demo.jpg width="800" height="500">
 </div>
 
 

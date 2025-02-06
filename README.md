@@ -8,7 +8,7 @@
 2nd Place of CVPR 2024 VAND2.0 Challenge:
 - Workshop Link: https://sites.google.com/view/vand-2-0-cvpr-2024/home
 - Challenge Link：https://www.hackster.io/contests/openvino2024
-- Simple Report Link: https://www.hackster.io/iair/canhuitang-submission-v2-37916c
+
 
 ## Author
 [Canhui Tang](https://scholar.google.com/citations?hl=zh-CN&user=TKqkrnUAAAAJ)[1], [Sanping Zhou](https://scholar.google.cz/citations?hl=zh-CN&user=2Drvv44AAAAJ)[1], Mang Cao[1], [Le Wang](https://scholar.google.cz/citations?hl=zh-CN&user=RypRCUQAAAAJ)[1], Hao Sun[2]
